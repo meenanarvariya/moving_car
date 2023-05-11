@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="">
+        <title>Document</title>
+        <style>
+            .car{
+                background:url('car_body.png') no-repeat ;
+                width: 220px;height: 100px;position: relative;
+            }
+            .wheel {
+                width:35px;
+                height:35px;            
+                position: absolute;
+            }
+            .image1{top: 42px;left: 35px;}
+            .image2{top: 42px;left: 160px;}
+        </style>
+        <script src="moving.js" defer ></script>
+    </head>
+    <body>
+        <div style="width:1000px;overflow:scroll;
+        overflow-y:hidden;">
+            <div class="car">
+                <img class="image1 wheel" src="wheel.png" />
+                <img class="image2 wheel" src="wheel.png" />
+            </div> 
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="btn1">Speed ++</button>
+            <button id="btn2">Speed --</button>
+            
+        </div>
+
+    </body>
+</html>
